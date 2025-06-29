@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v4.6.2
         with:
           name: todobackendjarfile
-          path: /home/runner/work/todoApp/todoApp/target/EventManagement-0.0.1-SNAPSHOT.jar
+          path: /home/runner/work/eventmanagement_backend/eventmanagement_backend/target/EventManagement-0.0.1-SNAPSHOT.jar
           if-no-files-found: error
           retention-days: 7
 
