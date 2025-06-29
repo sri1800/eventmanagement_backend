@@ -33,8 +33,8 @@ jobs:
       - name: jar upload
         uses: actions/upload-artifact@v4.6.2
         with:
-          name: todobackendjarfile
-          path: /home/runner/work/eventmanagement_backend/eventmanagement_backend/target/EventManagement-0.0.1-SNAPSHOT.jar
+          name: eventmgmtbackendjarfile
+          path: /home/runner/work/eventmanagement_backend/eventmanagement_backend/target/UserSpringSecurity-0.0.1-SNAPSHOT.jar
           if-no-files-found: error
           retention-days: 7
 
@@ -50,7 +50,7 @@ jobs:
       - name: jar download
         uses: actions/download-artifact@v4.3.0
         with:
-          name: todobackendjarfile
+          name: eventmgmtbackendjarfile
           path: /home/runner/work/eventmanagement_backend/eventmanagement_backend
 
       - name: login to dockerhub
